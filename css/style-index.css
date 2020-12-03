@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+:root{ /*Atribundo variáveis*/
+    --font-primary: "Poppins", serif; /*Fonte Primária*/
+    --font-secondary: "Montserrat", serif; /*Fonte Secundária*/
+    --color-primary: #EEEEEE;
+    --color-secondary: #EA8208;
+}  
+
+*{
+    margin: 0; /*Tirando Margem*/
+    padding: 0; /*Tirando Padding*/
+    border: none; /*Tiramos borda*/
+    outline: none; /*E outline*/
+    list-style: none; /*Tiramos estilo das listas*/
+    text-decoration: none; /*Tirando text-decoration do link*/
+    font-family: var(--font-primary); /*Definindo font-family*/
+}
+
+html{
+    overflow-x: hidden; /*Tirando overflow*/
+}
