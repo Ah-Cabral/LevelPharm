@@ -22,3 +22,19 @@
 html{
     overflow-x: hidden; /*Tirando overflow*/
 }
+
+.final-footer{
+    /*Cor do fundo*/
+    background-color: #193195;
+
+    /*Posicionamento*/
+    position: relative;
+    height: 6vh;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    
+    /*Texto*/
+    text-align: center
+
+}
