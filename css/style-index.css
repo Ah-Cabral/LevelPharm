@@ -25,6 +25,12 @@ html, body{
     scroll-behavior: smooth;
 }
 
+body{
+    width: 100%;
+}
+
+
+
 /* Configurando container (div que contém todo o conteúdo da página) */
 .container{
     display: flex;
@@ -57,6 +63,8 @@ html, body{
     color: var(--color-secondary);
     margin-right: 2vw;
     transition: 1s;
+    font-size: 30px;
+
 }
 
 /*Links em hover*/
@@ -71,7 +79,7 @@ html, body{
 
 /*Configurando Logo do Header*/
 .logo-header{
-    margin-left: 2%;
+    margin-left: 3%;
     height: auto;
     width: 10vw;
 
@@ -129,8 +137,9 @@ html, body{
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 5vh;
+    left: 4vh;
     bottom: 42vh;
+
 }
 
 /*Configurando botão de Email*/
@@ -139,8 +148,9 @@ html, body{
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 5vh;
+    left: 4vh;
     bottom: 32vh;
+
 }
 
 /*Configurando a div icon*/
@@ -154,6 +164,7 @@ html, body{
     background-color: #ffffff;
     border-radius: 50px;
     z-index: 1;
+    
 }
 
 /*Configurando o ícone da div*/
@@ -222,6 +233,90 @@ html, body{
     color: var(--color-secondary);
 }
 
+#quem-somos{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60vh;
+    background: url('../images/quem-somos-bg.jpg') no-repeat scroll center center / cover;
+}
+
+.logo-imagewrapper{
+
+    width: 100%;
+    height: 100%;
+
+}
+.quem-somos-logo{
+   
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
+    left:1.5em;
+
+}
+
+#nossos-servicos{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 60vh;
+    background: url('../images/quem-somos-bg.jpg') no-repeat scroll center center / cover;
+}
+
+#nossos-servicos a{
+
+    font-family: var(--font-primary);
+    color: var(--color-secondary);
+    background-color:#EEEEEE;
+    padding: 1vh;
+    border-radius: 10px;
+    
+}
+
+#nossos-servicos:hover a{
+
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    background-color: #193195;
+    padding: 1vh;
+    border-radius:10x;
+}
+
+#instutucional-sessao{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 60vh;
+    background: url('../images/quem-somos-bg.jpg') no-repeat scroll center center / cover;
+}
+
+#footer-page{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 60vh;
+    background: url('../images/quem-somos-bg.jpg') no-repeat scroll center center / cover;
+}
+
+.logo-footer{
+    margin-left: 3%;
+    height: auto;
+    width: 40vw;
+
+}
+
 .final-footer{
     /*Cor do fundo*/
     background-color: #193195;
@@ -230,12 +325,8 @@ html, body{
     flex-direction: row; /*Itens mostrados na horizontal (linha)*/
     position: relative;
     height: 2vh;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    
-    /*Posicionamento*/
     text-align: center;
+    bottom:0px;
 }
 
 @media (min-width: px) {
