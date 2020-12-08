@@ -19,8 +19,44 @@
     font-family: var(--font-primary); /*Definindo font-family*/
 }
 
-html{
+html, body{
     overflow-x: hidden; /*Tirando overflow*/
+    box-sizing: border-box; /*Adicionando o padding e a border no tamanho total do elemento*/
+}
+
+h1, h3{
+    font-family:"Poppins", serif;
+}
+
+p{
+    font-family:"Montserrat", serif;
+}
+
+.header-site{
+    display: flex; /*Definindo como flex - Unidimensional*/
+    flex-direction: row; /*Itens mostrados na horizontal (linha)*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 4vh 0;
+    height: 3vw;
+    background-color: #EEEEEE;
+    justify-content: space-between; /*Alinha no eixo principal*/
+    align-items: center;
+
+}
+
+nav{
+    margin: 2vw;
+ 
+}
+
+.logo-header{
+    margin-left: 2%;
+    height: auto;
+    width: 12vw;
+
 }
 
 .final-footer{
@@ -28,13 +64,19 @@ html{
     background-color: #193195;
 
     /*Posicionamento*/
+    display: flex; /*Definindo como flex - Unidimensional*/
+    flex-direction: row; /*Itens mostrados na horizontal (linha)*/
     position: relative;
-    height: 6vh;
+    height: 2vh;
     left: 0px;
     right: 0px;
     bottom: 0px;
     
-    /*Texto*/
-    text-align: center
+    /*Posicionamento*/
+    text-align: center;
+}
 
+@media (min-width: px) {
+
+    
 }
