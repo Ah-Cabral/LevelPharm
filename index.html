@@ -28,56 +28,59 @@
 <!--Início do Body-->
 <body>
 
-    <!--Cabeçalho-->
-    <header class="header-site">
-        <img class="logo-header" src="images/logo-level.png" alt="Logo Da LevelFarm" >
-        <nav>
-            <a href="">Home</a>
-            <a href="">Quem Somos</a>
-            <a href="">Serviços</a>
-            <a href="">Institucional</a>
-        </nav>
-    </header>
-
     <!--Div principal = Container-->
     <div class="container">
+        <!--Cabeçalho-->
+        <header id="header-site">
+            <img class="logo-header" src="images/logo-level.png" alt="Logo Da LevelFarm" >
+            <nav class="nav-header">
+                <a href="">Home</a>
+                <a href="">Quem Somos</a>
+                <a href="">Serviços</a>
+                <a href="">Institucional</a>
+            </nav>
+        </header>
 
         <!--Botão para redirecionamento para cima-->
-        <a href="">Seta para cima</a>
+        <div class="seta-up">
+            <a href="#header-site">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
 
         <!--Banner Inicial-->
         <section class="initial-banner">
             <!--Que vai ser dividido em Título-->
             <h1 class="section-text">
-                Lorem ipsum dolor sit amet
+                Lorem ipsum dolor sit amet.
             </h1>
 
             <!--Possuirá um botão para whatsapp-->
-            <div class="button-whatsapp">
-                <!--Parte do ícone-->
-                <div class="div-icon">
-                    <i class="fab fa-whatsapp"></i>
-                </div>
-                <!--Parte do texto-->
-                <div class="div-text">
-                    <p>Entre em contato via whatsapp.</p>
-                </div>
-            </div>
+            <a href="" class="button-whatsapp">
+                    <!--Parte do ícone-->
+                    <div class="div-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <!--Parte do texto-->
+                    <div class="div-text">
+                        <h5>Entre em contato via whatsapp.</h5>
+                    </div>
+            </a>
 
             <!--Possuirá um botão para email-->
-            <div class="button-email">
+            <a href="" class="button-email">
                 <div class="div-icon">
                     <i class="fas fa-envelope"></i>
                 </div>
                 <div class="div-text">
-                    <p>Entre em contato via email.</p>
+                    <h5>Entre em contato via email.</h4>
                 </div>
-            </div>
+            </a>
 
         </section>
 
         <!--Quem Somos-->
-        <section class="quem-somos">
+        <section id="quem-somos">
             
             <!--Possuirá a logo da LevelFarm-->
             <img src="images/logo-level.png" alt="Logo da LevelFarm">
@@ -94,7 +97,7 @@
         </section>
 
         <!--Nossos servicos-->
-        <section class="nossos-servicos">
+        <section id="nossos-servicos">
             <!--Vai ser dividido em-->
             <h1 class="titulo-sessao"></h1>
 
@@ -160,7 +163,7 @@
         </section>
 
         <!--Na sessão Institucional-->
-        <section class="instutucional-sessao">
+        <section id="instutucional-sessao">
             <!--Teremos também cards-->
             <div class="inst-card">
                 <!--Que possui uma imagem (50% DO CARD)-->
@@ -200,7 +203,7 @@
 
         </section>
 
-        <footer class="footer-page">
+        <footer id="footer-page">
             <!--Logo-->
             <img src="images/logo-level.png" alt="Logo Da LevelFarm" class="logo-header">
             <!--Botão do WhatsApp-->

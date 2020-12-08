@@ -6,7 +6,7 @@
     --font-primary: "Poppins", serif; /*Fonte Primária*/
     --font-secondary: "Montserrat", serif; /*Fonte Secundária*/
     --color-primary: #EEEEEE;
-    --color-secondary: #EA8208;
+    --color-secondary: #193195;
 }  
 
 *{
@@ -22,47 +22,209 @@
 html, body{
     overflow-x: hidden; /*Tirando overflow*/
     box-sizing: border-box; /*Adicionando o padding e a border no tamanho total do elemento*/
+    scroll-behavior: smooth;
 }
 
-h1, h3{
-    font-family:"Poppins", serif;
+/* Configurando container (div que contém todo o conteúdo da página) */
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
 }
 
-p{
-    font-family:"Montserrat", serif;
-}
-
-.header-site{
+ /*Configurando Header do site*/
+#header-site{
     display: flex; /*Definindo como flex - Unidimensional*/
+    justify-content: space-between; /*Alinha no eixo principal*/
+    align-items: center;
     flex-direction: row; /*Itens mostrados na horizontal (linha)*/
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     padding: 4vh 0;
     height: 3vw;
     background-color: #EEEEEE;
-    justify-content: space-between; /*Alinha no eixo principal*/
-    align-items: center;
-
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-nav{
+/*Configurando nav*/
+.nav-header{
     margin: 2vw;
- 
 }
 
+/*Links*/
+.nav-header a{
+    font-family: var(--font-primary);
+    color: var(--color-secondary);
+    margin-right: 2vw;
+    transition: 1s;
+}
+
+/*Links em hover*/
+.nav-header a:hover{
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    background-color: #193195;
+    padding: 1vh;
+    border-radius: 10px;
+}
+
+
+/*Configurando Logo do Header*/
 .logo-header{
     margin-left: 2%;
     height: auto;
-    width: 12vw;
+    width: 10vw;
 
+}
+
+/*Tratando posição da seta*/
+.seta-up{
+    position: fixed;
+    right: 4em;
+    bottom: 4em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/*Como ela se comporta*/
+.seta-up i{
+    font-size: 1.75em;
+    padding: .7em;
+    background-color:var(--color-secondary);
+    color: var(--color-primary);
+    border-radius: 10px;
+    transition: .5s;
+}
+
+/*Como ela se comporta*/
+.seta-up i:hover{
+    background-color: #ffffff;
+    color: var(--color-secondary);
+    border-radius: 10px;
+}
+
+/*Configurando Banner Inicial*/
+.initial-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    background: url('../images/banner-bg.jpg') no-repeat scroll center center / cover;
+}
+
+.section-text{
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Configurando botão de Whatsapp*/
+.button-whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 5vh;
+    bottom: 42vh;
+}
+
+/*Configurando botão de Email*/
+.button-email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 5vh;
+    bottom: 32vh;
+}
+
+/*Configurando a div icon*/
+.div-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    padding: 1.5em;
+    background-color: #ffffff;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+/*Configurando o ícone da div*/
+.div-icon i{
+    font-size: 1.3em;
+    color: var(--color-secondary);
+}
+
+/*Configurando a div text*/
+.div-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    left: 2.5vh;
+    width: 12em;
+    height: 3.2em;
+    background-color: var(--color-secondary);
+    border-radius: 30px;
+    padding-left: 1em;
+}
+
+/*Configurando o texto presente na div*/
+.div-text h5{
+    width: 10em;
+    color: #EEEEEE;
+}
+
+/*Agora será configurado o botão do whatsapp no evento de hover*/
+.button-whatsapp:hover .div-icon{
+    background-color: var(--color-secondary);
+    transition: .5s;
+}
+
+.button-whatsapp:hover .div-icon i{
+    color: var(--color-primary);
+}
+
+/*Agora será configurado o botão do whatsapp no evento de hover*/
+.button-whatsapp:hover .div-text{
+    background-color: var(--color-primary);
+    transition: .5s;
+}
+
+.button-whatsapp:hover .div-text h5{
+    color: var(--color-secondary);
+}
+
+/*Agora será configurado o botão do email no evento de hover*/
+.button-email:hover .div-icon{
+    background-color: var(--color-secondary);
+    transition: .5s;
+}
+
+.button-email:hover .div-icon i{
+    color: var(--color-primary);
+}
+
+.button-email:hover .div-text{
+    background-color: var(--color-primary);
+    transition: .5s;
+}
+
+.button-email:hover .div-text h5{
+    color: var(--color-secondary);
 }
 
 .final-footer{
     /*Cor do fundo*/
     background-color: #193195;
-
     /*Posicionamento*/
     display: flex; /*Definindo como flex - Unidimensional*/
     flex-direction: row; /*Itens mostrados na horizontal (linha)*/
