@@ -42,7 +42,7 @@ body{
  /*Configurando Header do site*/
 #header-site{
     display: flex; /*Definindo como flex - Unidimensional*/
-    justify-content: space-between; /*Alinha no eixo principal*/
+    justify-content: center; /*Alinha no eixo principal*/
     align-items: center;
     flex-direction: row; /*Itens mostrados na horizontal (linha)*/
     width: 100%;
@@ -62,6 +62,7 @@ body{
 .nav-header a{
     font-family: var(--font-primary);
     color: var(--color-secondary);
+    font-size: .75em;
     margin-right: 2vw;
     transition: 1s;
 
@@ -82,7 +83,7 @@ body{
     margin-left: 3%;
     height: auto;
     width: 10vw;
-
+    display: none;
 }
 
 /*Tratando posição da seta*/
@@ -119,7 +120,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     position: relative;
     background: url('../images/banner-bg.jpg') no-repeat scroll center center / cover;
 }
@@ -143,7 +144,6 @@ body{
     position: absolute;
     left: 4vh;
     bottom: 15vh;
-
 }
 
 /*Configurando botão de Email*/
@@ -240,7 +240,7 @@ body{
 /*Configurando vídeo*/
 #quem-somos{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -272,14 +272,15 @@ body{
 
 .titulo-sessao{
     width: 70%;
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
+    color: var(--color-secondary);
 }
 
 .text-quem-somos-wrapper p{
-    width: 70%;
+    width: 80%;
     text-align: center;
-    font-size: 1.2em;
+    font-size: .8em;
 }
 
 .text-quem-somos-wrapper a{
@@ -311,10 +312,132 @@ body{
     color: var(--color-secondary);
     background-color: #EEEEEE;
 }
+
 .card-servico{
-    width: 30%;
-    height: 60%;
+    width: 15em;
+    height: 23em;
+    border-radius: 10px;
+    position: relative;
+    margin: .5em;
 }
+
+.img-wrapper-card{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.img-wrapper-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: .75;
+}
+
+.text-card{
+    width: 90%;
+    position: absolute;
+    top: 4em;
+    left: .3em;
+    text-align: left;
+    color: var(--color-primary);
+}
+
+.text-card h3{
+    font-family: var(--font-primary);
+    font-size: 1.4em;
+}
+
+.text-card p{
+    font-family: var(--font-secondary);
+    font-size: .9em;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.button-servico{
+    font-family: var(--color-primary);
+    font-weight: 500;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    text-transform: uppercase;
+    padding: .5em;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.button-servico:hover{
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+#institucional-sessao{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo-inst{
+    width: 100%;
+    font-family: var(--font-primary);
+    color: var(--color-secondary);
+    font-size: 2em;
+    text-align: center;
+}
+
+.inst-card{
+    width: 14em;
+    height: 18em;
+    margin: 1em;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: relative;
+}
+
+.img-wrapper-inst{
+    width: 100%;
+    height: 50%;
+    background-color: #000000;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+}
+
+.img-wrapper-inst img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .95;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.img-wrapper-inst i{
+    position: absolute;
+    top: .40em;
+    left: 1.15em;
+    z-index: 1;
+    font-size: 3em;
+    padding: .7em;
+    background-color: #ffffff;
+    color: var(--color-secondary);
+    border-radius: 100px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.397);
+}
+
+#inst-icon-2{
+    padding: .7em .85em;
+}
+
+.inst-title{
+
+}
+
 .final-footer{
     /*Cor do fundo*/
     background-color: #193195;
