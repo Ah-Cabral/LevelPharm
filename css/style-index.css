@@ -5,7 +5,7 @@
 :root{ /*Atribundo variáveis*/
     --font-primary: "Poppins", serif; /*Fonte Primária*/
     --font-secondary: "Montserrat", serif; /*Fonte Secundária*/
-    --color-primary: #EEEEEE;
+    --color-primary: #f1f1f1;
     --color-secondary: #193195;
 }  
 
@@ -48,8 +48,9 @@ body{
     width: 100%;
     padding: 4vh 0;
     height: 3vw;
-    background-color: #EEEEEE;
+    background-color: #ffffff;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }
 
 /*Configurando nav*/
@@ -63,7 +64,6 @@ body{
     color: var(--color-secondary);
     margin-right: 2vw;
     transition: 1s;
-    font-size: 30px;
 
 }
 
@@ -88,16 +88,17 @@ body{
 /*Tratando posição da seta*/
 .seta-up{
     position: fixed;
-    right: 4em;
-    bottom: 4em;
+    right: 3em;
+    bottom: 3em;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }
 
 /*Como ela se comporta*/
 .seta-up i{
     font-size: 1.75em;
-    padding: .7em;
+    padding: .5em;
     background-color:var(--color-secondary);
     color: var(--color-primary);
     border-radius: 10px;
@@ -119,10 +120,13 @@ body{
     justify-content: center;
     width: 100%;
     height: 60vh;
+    position: relative;
     background: url('../images/banner-bg.jpg') no-repeat scroll center center / cover;
 }
 
 .section-text{
+    position: absolute;
+    top: 4em;
     font-family: var(--font-primary);
     color: var(--color-primary);
     font-weight: 600;
@@ -138,7 +142,7 @@ body{
     justify-content: center;
     position: absolute;
     left: 4vh;
-    bottom: 42vh;
+    bottom: 15vh;
 
 }
 
@@ -149,7 +153,7 @@ body{
     justify-content: center;
     position: absolute;
     left: 4vh;
-    bottom: 32vh;
+    bottom: 5vh;
 
 }
 
@@ -175,7 +179,7 @@ body{
 
 /*Configurando a div text*/
 .div-text{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -233,90 +237,84 @@ body{
     color: var(--color-secondary);
 }
 
+/*Configurando vídeo*/
 #quem-somos{
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
-    height: 60vh;
-    background: url('../images/quem-somos-bg.jpg') no-repeat scroll center center / cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background: url('../images/quem-somos-bg.jpg') no-repeat center center / cover;
 }
 
-.logo-imagewrapper{
+.quem-somos-logo-wrapper{
+    display: none;
+    width: 100vw;
+    height: 30%;
+}
 
+.quem-somos-logo-wrapper img{
     width: 100%;
     height: 100%;
-
-}
-.quem-somos-logo{
-   
-    width: 50%;
-    height: 80%;
     object-fit: cover;
-    left:1.5em;
+}
 
+.text-quem-somos-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+.titulo-sessao{
+    width: 70%;
+    font-size: 3em;
+    text-align: center;
+}
+
+.text-quem-somos-wrapper p{
+    width: 70%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.text-quem-somos-wrapper a{
+    width: 60%;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    font-weight: 600;
+    text-align: center;
+    padding: .5em;
+    border-radius: 10px;
+    margin: 1em;
+    transition: .5s;
+}
+
+.text-quem-somos-wrapper a:hover{
+    width: 60%;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 #nossos-servicos{
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
     width: 100%;
-    height: 60vh;
-    background: url('../images/quem-somos-bg.jpg') no-repeat scroll center center / cover;
-}
-
-#nossos-servicos a{
-
-    font-family: var(--font-primary);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: var(--color-secondary);
-    background-color:#EEEEEE;
-    padding: 1vh;
-    border-radius: 10px;
-    
+    background-color: #EEEEEE;
 }
-
-#nossos-servicos:hover a{
-
-    font-family: var(--font-primary);
-    color: var(--color-primary);
-    background-color: #193195;
-    padding: 1vh;
-    border-radius:10x;
+.card-servico{
+    width: 30%;
+    height: 60%;
 }
-
-#instutucional-sessao{
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    height: 60vh;
-    background: url('../images/quem-somos-bg.jpg') no-repeat scroll center center / cover;
-}
-
-#footer-page{
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    height: 60vh;
-    background: url('../images/quem-somos-bg.jpg') no-repeat scroll center center / cover;
-}
-
-.logo-footer{
-    margin-left: 3%;
-    height: auto;
-    width: 40vw;
-
-}
-
 .final-footer{
     /*Cor do fundo*/
     background-color: #193195;
