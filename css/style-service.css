@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+:root{ /*Atribundo variáveis*/
+    --font-primary: "Poppins", serif; /*Fonte Primária*/
+    --font-secondary: "Montserrat", serif; /*Fonte Secundária*/
+    --color-primary: #f1f1f1;
+    --color-secondary: #193195;
+}  
+
+*{
+    margin: 0; /*Tirando Margem*/
+    padding: 0; /*Tirando Padding*/
+    border: none; /*Tiramos borda*/
+    outline: none; /*E outline*/
+    list-style: none; /*Tiramos estilo das listas*/
+    text-decoration: none; /*Tirando text-decoration do link*/
+    font-family: var(--font-primary); /*Definindo font-family*/
+}
+
+html, body{
+    overflow-x: hidden; /*Tirando overflow*/
+    box-sizing: border-box; /*Adicionando o padding e a border no tamanho total do elemento*/
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+}
+
+/* Configurando container (div que contém todo o conteúdo da página) */
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+ /*Configurando Header do site*/
+#header-site{
+    display: flex; /*Definindo como flex - Unidimensional*/
+    justify-content: center; /*Alinha no eixo principal*/
+    align-items: center;
+    flex-direction: row; /*Itens mostrados na horizontal (linha)*/
+    width: 100%;
+    padding: 4vh 0;
+    height: 3vw;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+/*Configurando nav*/
+.nav-header{
+    margin: 2vw;
+}
+
+/*Links*/
+.nav-header a{
+    font-family: var(--font-primary);
+    color: var(--color-secondary);
+    font-size: 2.5em;
+    margin-right: 2vw;
+    transition: 1s;
+
+}
+
+/*Links em hover*/
+.nav-header a:hover{
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    background-color: #193195;
+    padding: 1vh;
+    border-radius: 10px;
+}
+
+
+/*Configurando Logo do Header*/
+.logo-header{
+    margin-left: 3%;
+    height: auto;
+    width: 10vw;
+    display: none;
+}
+
+/*Tratando posição da seta*/
+.seta-up{
+    position: fixed;
+    right: .5em;
+    bottom: 3em;
+    border-radius: 35px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+/*Como ela se comporta*/
+.seta-up i{
+    font-size: 4em;
+    padding: .75em;
+    background-color:var(--color-secondary);
+    color: var(--color-primary);
+    border-radius: 35px;
+    transition: .5s;
+}
+
+/*Como ela se comporta*/
+.seta-up i:hover{
+    background-color: #ffffff;
+    color: var(--color-secondary);
+    border-radius: 35px;
+}
+
+.service-initial-banner{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('../images/serv-bg1.jpg') no-repeat scroll center center / cover;
+    color: var(--color-secondary);
+}
+
+.service-tittle{
+    font-family: var(--font-secondary);
+    font-size: 6em;
+    text-align: center;
+    width: 55%;
+    margin-bottom: .5em;
+}
+
+.service-text{
+    font-size: 3.5em;
+    font-weight: 500;
+    text-align: center;
+    width: 50%;
+}
+
+.como-funciona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+
+.titulo-sessao{
+    width: 70%;
+    font-size: 7em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.tutorial-title{
+    font-size: 7em;
+}
+
+.tutorial-text{
+    font-size: 1em;
+    margin-bottom: 5.5em;
+}
+
+
+
+.div-icon i{
+    width: 70%;
+    font-size: 14em;
+    text-align: center;
+}
+
+#footer-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer{
+    width: 40em;    
+    height: 40em;
+}
+
+.titulo-footer{
+    font-family: var(--font-secondary);
+    color: var(--color-secondary);
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+.wpp-icon i{
+    color: var(--color-secondary);
+    font-size: 16em;
+    margin-bottom: .5em;
+}
+
+.email-icon i{
+    color: var(--color-secondary);
+    font-size: 16em;
+}
+
+.map{
+    border-radius: 25px;
+}
+.final-footer{
+    width: 100%;
+    /*Cor do fundo*/
+    background-color: #193195;
+    /*Posicionamento*/
+    display: flex; /*Definindo como flex - Unidimensional*/
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    text-align: center;
+}
+
+.final-footer span{
+    font-family: var(--font-secondary);
+    font-size: 2em;
+    color: var(--color-primary);
+}
+
+@media (min-width: px) {
+
+    
+}

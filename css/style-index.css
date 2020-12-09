@@ -60,7 +60,7 @@ body{
 .nav-header a{
     font-family: var(--font-primary);
     color: var(--color-secondary);
-    font-size: .75em;
+    font-size: .76em;
     margin-right: 2vw;
     transition: 1s;
 
@@ -486,6 +486,7 @@ body{
 .map{
     border-radius: 25px;
 }
+
 .final-footer{
     width: 100%;
     /*Cor do fundo*/

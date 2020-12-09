@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <link rel="stylesheet" href="css/style-index.css">
+    <link rel="stylesheet" href="css/style-service.css">
 
     <title>Serviço</title>
 
@@ -25,9 +25,7 @@
         
         <!--Cabeçalho-->
         <header id="header-site">
-            <div class="logo-image-wrapper">
-                <img class="logo-header" src="images/logo-level.png" alt="Logo Da LevelFarm" >
-            </div>
+            <img class="logo-header" src="images/logo-level.png" alt="Logo Da LevelFarm" >
             <nav class="nav-header">
                 <a href="">Home</a>
                 <a href="">Quem Somos</a>
@@ -37,17 +35,22 @@
         </header>
 
         <!--Botão para redirecionamento para cima-->
-        <a class="seta-up" href=".header-site"><i class="fas fa-chevron-up"></i></a>
+        <div class="seta-up">
+            <a href="#header-site">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
 
         <!--Banner Inicial-->
         <section class="service-initial-banner">
             <!--Título-->
             <h1 class="service-tittle">
-                Lorem ipsum dolor sit amet
+                Tenha o melhor suporte
+                ao abrir sua farmácia!
             </h1>
             <!--Texto sobre o serviço-->
             <p class="service-text">
-                Lorem ipsum dolor sit amet
+                Lorem ipsum dolor sit amet.
             </p>
 
         </section>
@@ -56,15 +59,15 @@
         <section class="como-funciona">
             
             <!--Título da Sessão-->
-            <h1 class="titulo-sessao">COMO FUNCIONA</h1>
+            <h1 class="titulo-sessao">Como Funciona</h1>
             <!--  Card -->                
             <div class="card-como-funciona">
              <!-- Ícone -->
                 <div class="div-icon">
-                    <i class=""></i>
+                    <i class="fas fa-headset"></i>
                 </div>                
                 <!-- Nesse card temos o título do passo 1 -->
-                <h3 class="tutorial-title">PASSO 1</h3>
+                <h3 class="tutorial-title">Passo 1</h3>
                 <!-- E o texto do mesmo-->
                 <p class="tutorial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore officia fugit quasi voluptas quae et facilis?</p>
             </div>
@@ -72,10 +75,10 @@
             <div class="card-como-funciona">
              <!-- Ícone -->
                 <div class="div-icon">
-                    <i class=""></i>
+                    <i class="far fa-file-alt"></i>
                 </div>                
                 <!-- Nesse card temos o título do passo 2 -->
-                <h3 class="tutorial-title">PASSO 2</h3>
+                <h3 class="tutorial-title">Passo 2</h3>
                 <!-- E o texto do mesmo-->
                 <p class="tutorial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore officia fugit quasi voluptas quae et facilis?</p>
             </div>
@@ -83,62 +86,42 @@
             <div class="card-como-funciona">
              <!-- Ícone -->
                 <div class="div-icon">
-                    <i class=""></i>
+                    <i class="fas fa-comments"></i>
                 </div>                
                 <!-- Nesse card temos o título do passo 3 -->
-                <h3 class="tutorial-title">PASSO 3</h3>
+                <h3 class="tutorial-title">Passo 3</h3>
                 <!-- E o texto do mesmo-->
                 <p class="tutorial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore officia fugit quasi voluptas quae et facilis?</p>
             </div>
 
         </section>
 
-        <section class="contato">
-            <!--Possuirá um botão para whatsapp-->
-            <div class="service-button-whatsapp">
-                <!--Parte do ícone-->
-                <div class="contact-icon">
-                    <i class="fab fa-whatsapp"></i>
+        <footer id="footer-page">
+            <!--Logo-->
+            <img src="images/logo-level.png" alt="Logo Da LevelFarm" class="logo-footer">
+
+            <h2 class="titulo-footer">Contato</h2>
+
+            <!--Botão do WhatsApp-->
+                <div class="wpp-icon">
+                    <a href=""></a><i class="fab fa-whatsapp"></i></a>
                 </div>
-                <!--Parte do texto-->
-                <div class="service-div-text">
-                    <p>Entre em contato via whatsapp.</p>
-                </div>
+
+            <!--Botão do WhatsApp-->
+            <div class="email-icon">
+                <a href=""><i class="fas fa-envelope"></i></a>
             </div>
 
-            <!--Possuirá um botão para email-->
-            <div class="service-button-email">
-                <div class="contact-icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <div class="service-div-text">
-                    <p>Entre em contato via email.</p>
-                </div>
-            </div>
-        </section>                
-        
-        <footer class="footer-page">
-            <!--Logo-->
-            <img src="images/logo-level.png" alt="Logo Da LevelFarm" class="logo-header">
-            <!--Botão do WhatsApp-->
-            <div class="service-button-whatsapp">
-                <!--Ícone do WhatsApp-->
-                <div class="contact-icon">
-                    <i class="fab fa-whatsapp"></i>
-                </div>
-            <!--Botão do WhatsApp-->
-            <div class="service-button-email">
-                <!--Ícone do Email-->
-                <div class="contact-icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
+            <div>
+                <h2 class="titulo-footer">Localização</h2>
             </div>
 
             <div class="map">            
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.535277992446!2d-34.947314985144885!3d-8.04675178259862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1961324bcf9d%3A0xc61935a160e06860!2sAv.%20Prof.%20Moraes%20Rego%2C%20844%20-%20Cidade%20Universit%C3%A1ria%2C%20Recife%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1607518875167!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.535277992446!2d-34.947314985144885!3d-8.04675178259862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1961324bcf9d%3A0xc61935a160e06860!2sAv.%20Prof.%20Moraes%20Rego%2C%20844%20-%20Cidade%20Universit%C3%A1ria%2C%20Recife%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1607518875167!5m2!1spt-BR!2sbr" width="1200" height="800" frameborder="0" style="border:0; border-radius: 10px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            </div>
             </div>
+            
             <div class="final-footer">
-                LevelPharm | © 2020 | Todos os direitos reservados 
+                <span>LevelPharm | © 2020 | Todos os direitos reservados</span>
             </div>
         </footer>
 
