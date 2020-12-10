@@ -125,10 +125,12 @@ body{
 
 .service-tittle{
     font-family: var(--font-secondary);
-    font-size: 6em;
+    font-size: 10em;
     text-align: center;
     width: 55%;
     margin-bottom: .5em;
+    display: flex;
+    justify-content: center;
 }
 
 .service-text{
@@ -136,6 +138,8 @@ body{
     font-weight: 500;
     text-align: center;
     width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .como-funciona{
@@ -145,6 +149,7 @@ body{
     justify-content: center;
     text-align: center;
     color: var(--color-secondary);
+    background-color: #EEEEEE;
 }
 
 
