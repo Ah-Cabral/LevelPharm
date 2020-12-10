@@ -215,15 +215,16 @@ body{
     margin-bottom: 1em;
 }
 
-.wpp-icon i{
+.wpp-icon a{
     color: var(--color-secondary);
-    font-size: 16em;
-    margin-bottom: .5em;
+    font-size: 1.5em;
+
 }
 
 .email-icon i{
     color: var(--color-secondary);
     font-size: 10em;
+    margin-top: .5em;
 }
 
 .map{
