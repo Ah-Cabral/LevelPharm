@@ -225,7 +225,11 @@ body{
     color: var(--color-primary);
 }
 
-@media (min-width: px) {
+@media (min-width: 700px) {
 
+.nav-header a{
+    font-size:2.3em;
+    margin-right: 1vw;
+}
     
 }

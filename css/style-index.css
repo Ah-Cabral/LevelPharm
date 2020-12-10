@@ -63,7 +63,6 @@ body{
     font-size: .76em;
     margin-right: 2vw;
     transition: 1s;
-
 }
 
 /*Links em hover*/
@@ -132,6 +131,7 @@ body{
     font-size: 4em;
     text-align: center;
     text-transform: uppercase;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.514);
 }
 
 .span-pharm{
@@ -505,7 +505,23 @@ body{
     color: var(--color-primary);
 }
 
-@media (min-width: px) {
+@media (min-width: 700px) {
 
-    
+    .nav-header a{
+        font-size: 1.3em;
+    }
+
+    .logo-header{
+        width: 8em;
+        height: 8em;
+        display: flex;
+    }
+
+    /*Configurando a div text*/
+    .div-text{
+        display: flex;
+    }
+
+    .section-text{
+        top: 3em;
 }
