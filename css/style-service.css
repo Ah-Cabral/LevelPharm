@@ -211,7 +211,7 @@ body{
 .titulo-footer{
     font-family: var(--font-secondary);
     color: var(--color-secondary);
-    font-size: 4em;
+    font-size: 5em;
     margin-bottom: 1em;
 }
 
@@ -223,7 +223,7 @@ body{
 
 .email-icon i{
     color: var(--color-secondary);
-    font-size: 8em;
+    font-size: 10em;
 }
 
 .map{

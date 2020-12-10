@@ -462,26 +462,26 @@ body{
 }
 
 .logo-footer{
-    width: 20em;    
-    height: 20em;
+    width: 11.5em;    
+    height: 11.5m;
 }
 
 .titulo-footer{
     font-family: var(--font-secondary);
     color: var(--color-secondary);
-    font-size: 2em;
+    font-size: 1.80em;
     margin-bottom: .5em;
 }
 
 .wpp-icon i{
     color: var(--color-secondary);
-    font-size: 8em;
+    font-size: 3em;
     margin-bottom: .5em;
 }
 
 .email-icon i{
     color: var(--color-secondary);
-    font-size: 8em;
+    font-size: 3em;
 }
 
 .map{
@@ -586,7 +586,7 @@ body{
 
     .email-icon{
         margin-bottom: 3.5em;
-        font-size: .5em;
+        font-size: 1.2em;
     }
 
     .wpp-icon i{
