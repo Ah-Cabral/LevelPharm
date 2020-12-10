@@ -154,6 +154,17 @@ body{
 }
 
 
+.card-como-funciona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    height: 90%;
+}
+
+
 .titulo-sessao{
     display: flex;
     align-items: center;
@@ -170,15 +181,17 @@ body{
 }
 
 .tutorial-text{
-    font-size: 1em;
+    width: 100%;
+    font-size: 2.5em;
     margin-bottom: 5.5em;
     text-align: center;
 }
 
 .div-icon i{
-    width: 70%;
+    width: 100%;
     font-size: 14em;
     text-align: center;
+    margin-top: 1em;
 }
 
 #footer-page{
@@ -236,22 +249,102 @@ body{
 
 @media (min-width: 700px) {
 
+    /*Tratando posição da seta*/
+    .seta-up{
+        position: fixed;
+        right: .5em;
+        bottom: 3em;
+        border-radius: 25px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        z-index: 1;
+    }
+
+    /*Como ela se comporta*/
+    .seta-up i{
+        font-size: 4em;
+        padding: .35em;
+        border-radius: 25px;
+    }
+    
     .nav-header a{
-        font-size:2.3em;
+        font-size:1.5em;
     }
     
     .service-title{
-        font-size: 10em;
+        font-size: 6em;
     }
 
     .service-text{
-        font-size: 3.5em;
+        font-size: 2.5em;
     }
 
     /*Configurando a div text*/
     .div-text{
         display: flex;
     }
+
+    .como-funciona{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: var(--color-secondary);
+        background-color: #EEEEEE;
+    }
+    
+    .tutorial-sessao{
+        font-size: 4em;
+    }
+    
+
+    .tutorial-title{
+        font-size: 4em;
+    }
+
+    .tutorial-text{
+        width: 100%;
+        font-size: 2em;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+    
+    .div-icon i{
+        width: 100%;
+        font-size: 8em;
+        text-align: center;
+        margin-top: .5em;
+    }
+
+    
+    .titulo-sessao{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 5em;
+        text-align: center;
+        background-color: #EEEEEE;
+        color: var(--color-secondary);
+    }
+
+
+    .logo-footer{
+        width: 30em;    
+        height: 30em;
+    }
+
+
+    .email-icon{
+        margin-bottom: 3.5em;
+        font-size: .8em;
+    }
+
+    .wpp-icon i{
+        color: var(--color-secondary);
+        font-size: 6em;
+    }
+
 }
 
 @media (min-width: 1000px){
@@ -261,7 +354,7 @@ body{
     }
 
     .service-title{
-        font-size: 7em;
+        font-size: 6em;
     }
 
     .service-text{
@@ -304,15 +397,15 @@ body{
     }
     
     .div-icon i{
-        font-size: 8em;
+        font-size: 6em;
     }
 
     .tutorial-title{
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .tutorial-text{
-        width: 100%;
+        width: 70%;
         font-size: 1em;
         text-align: center;
     }
