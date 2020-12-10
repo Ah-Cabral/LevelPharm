@@ -383,6 +383,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: #EEEEEE;
 }
 
 .titulo-inst{
@@ -534,6 +535,11 @@ body{
 }
 
 @media (min-width: 1000px) {
+    
+    .section-text{
+        top: 2.2em;
+        font-size: 5.5em;
+    }
 
     #quem-somos{
         width: 100%;
@@ -580,5 +586,12 @@ body{
 
     .email-icon{
         margin-bottom: 3.5em;
+        font-size: .5em;
     }
+
+    .wpp-icon i{
+        color: var(--color-secondary);
+        font-size: 4em;
+    }
+    
 }
