@@ -142,6 +142,7 @@ body{
     justify-content: center;
 }
 
+
 .como-funciona{
     display: flex;
     flex-direction: column;
@@ -154,10 +155,14 @@ body{
 
 
 .titulo-sessao{
-    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     font-size: 7em;
     text-align: center;
-    margin-bottom: 1em;
+    background-color: #EEEEEE;
+    color: var(--color-secondary);
 }
 
 .tutorial-title{
@@ -167,9 +172,8 @@ body{
 .tutorial-text{
     font-size: 1em;
     margin-bottom: 5.5em;
+    text-align: center;
 }
-
-
 
 .div-icon i{
     width: 70%;
@@ -232,9 +236,103 @@ body{
 
 @media (min-width: 700px) {
 
-.nav-header a{
-    font-size:2.3em;
-    margin-right: 1vw;
-}
+    .nav-header a{
+        font-size:2.3em;
+    }
     
+    .service-title{
+        font-size: 10em;
+    }
+
+    .service-text{
+        font-size: 3.5em;
+    }
+
+    /*Configurando a div text*/
+    .div-text{
+        display: flex;
+    }
+}
+
+@media (min-width: 1000px){
+
+    .nav-header a{
+        font-size:1.5em;
+    }
+
+    .service-title{
+        font-size: 7em;
+    }
+
+    .service-text{
+        font-size: 2.5em;
+    }
+
+    .titulo-sessao{
+        font-size: 4em;
+    }
+
+    #footer-page{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .logo-header{
+        width: 8em;
+        height: 8em;
+        display: flex;
+    }
+
+    .titulo-footer{
+        display: none;
+    }
+
+    .email-icon{
+        margin-bottom: 3.5em;
+        font-size: .5em;
+    }
+
+    .wpp-icon i{
+        color: var(--color-secondary);
+        font-size: 4em;
+    }
+
+    .como-funciona{
+        flex-direction: row;
+    }
+    
+    .div-icon i{
+        font-size: 8em;
+    }
+
+    .tutorial-title{
+        font-size: 4em;
+    }
+
+    .tutorial-text{
+        width: 100%;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .logo-footer{
+        width: 30em;    
+        height: 30em;
+    }
+
+    .seta-up i{
+        font-size: 2em;
+        padding: .75em;
+        border-radius: 25px;
+    }
+
+    .final-footer{
+        height: 2em;
+    }
+    
+    .final-footer span{
+        font-size: 1em;
+    }
 }
