@@ -191,8 +191,8 @@ body{
 }
 
 .logo-footer{
-    width: 40em;    
-    height: 40em;
+    width: 20em;    
+    height: 20em;
 }
 
 .titulo-footer{
@@ -210,7 +210,7 @@ body{
 
 .email-icon i{
     color: var(--color-secondary);
-    font-size: 16em;
+    font-size: 8em;
 }
 
 .map{
