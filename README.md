@@ -10,8 +10,8 @@ Respeitando sempre o bem-estar físico, mental e social daqueles que dependem di
 
 ​Com nossa marca "saúde para todos" vivemos constantemente procurando levar a importância da saúde acessível para todos.
 
-##Autores: Arthur Cabral e Marília Gouveia
+## Autores: Arthur Cabral e Marília Gouveia
 
-###Ícones
+### Ícones
 
 -🆙 Atualização
